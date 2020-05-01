@@ -25,15 +25,45 @@
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
         <link rel="stylesheet" href="styles/main.css">
     </head>
-    <body>
-            
-        <header>@@include("../blocks/modules/header/header.html")</header>
-        
-        <div>fgfhhfffjfjjfjf</div>
-
+    <body>  
+        <header class="contactUs-header">@@include("../blocks/modules/header/header.html")</header>
+        <section class="contactUs-firstSection">
+            <div class="wrap">
+                <h1 class="contactUs-firstSection__title">Contact Us</h1>
+                <p class="contactUs-firstSection__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section class="contactUs-secondSection">
+            <div class="wrap">
+                <div class="contactUs-secondSection__contacts">
+                    <div class="contactUs-secondSection__contacts-coordinats">
+                        <img src="../img/Contact Us.png" alt="">
+                        <h5>ADDRESS</h5>
+                        <p>Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
+                        <h5>PHONE</h5>
+                        <a class="contactUs-secondSection__contacts-coordinats-tel" href="">+62-812-7313-4321</a>
+                        <a class="contactUs-secondSection__contacts-coordinats-tel" href="">+62-817-000-1234</a>
+                        <h5 class="contactUs-secondSection__contacts-coordinats-service">ONLINE SERVICE</h5>
+                        <a class="contactUs-secondSection__contacts-coordinats-site" href="">www.afrianska.com</a>
+                        <a class="contactUs-secondSection__contacts-coordinats-mail" href="">hello.afrian@gmail.com</a>
+                    </div>
+                    <div class="contactUs-secondSection__contacts-form">
+                        <h5>SEND US MESSAGE</h5>
+                        <form action="">
+                            <label for="">Full Name</label><br>
+                            <input type="text" placeholder="Your Name"><br>
+                            <label for="">Email</label><br>
+                            <input type="email" placeholder="Your Email"><br>
+                            <label for="">Message</label><br>
+                            <textarea rows="5" cols="45" placeholder="Your Message"></textarea><br>
+                            <button>SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contactUs-secondSection__map"></div>
+            </div>
+        </section>
         <footer>@@include("../blocks/modules/footer/footer.html")</footer>
-           
-        
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>
